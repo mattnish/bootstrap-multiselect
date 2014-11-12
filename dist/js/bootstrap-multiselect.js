@@ -659,7 +659,7 @@
         },
 
         /**
-         * Build the selct all.
+         * Build the select all.
          * 
          * Checks if a select all has already been created.
          */
@@ -691,7 +691,7 @@
                 var $checkbox = $('input', $li);
                 $checkbox.val(this.options.selectAllValue);
 
-                $li.addClass("multiselect-item multiselect-all");
+                $li.addClass("multiselect-item multiselect-all active");
                 $checkbox.parent().parent()
                     .addClass('multiselect-all');
 
@@ -699,7 +699,7 @@
 
                 this.$ul.prepend($li);
 
-                $checkbox.prop('checked', false);
+                $checkbox.prop('checked', true);
             }
         },
 
