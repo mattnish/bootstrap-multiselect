@@ -691,7 +691,7 @@
                 var $checkbox = $('input', $li);
                 $checkbox.val(this.options.selectAllValue);
 
-                $li.addClass("multiselect-item multiselect-all active");
+                $li.addClass("multiselect-item multiselect-all");
                 $checkbox.parent().parent()
                     .addClass('multiselect-all');
 
@@ -699,7 +699,7 @@
 
                 this.$ul.prepend($li);
 
-                $checkbox.prop('checked', true);
+                $checkbox.prop('checked', false);
             }
         },
 
